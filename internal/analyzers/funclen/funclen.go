@@ -14,7 +14,6 @@ const (
 	statementLimit = 25
 )
 
-// Analyzer runs static analysis.
 var Analyzer = &analysis.Analyzer{
 	Name:     "funclen",
 	Doc:      "Checks the length of functions",
