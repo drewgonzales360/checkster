@@ -73,5 +73,5 @@ func getRecvType(pass *analysis.Pass, recv *ast.FieldList) string {
 
 	fullType := strings.Split(pass.TypesInfo.Types[recv.List[0].Type].Type.String(), "/")
 	pkgType := fullType[len(fullType)-1]
-	return fmt.Sprintf("(%s)", pkgType)
+	return fmt.Sprintf("(%s).", pkgType)
 }
